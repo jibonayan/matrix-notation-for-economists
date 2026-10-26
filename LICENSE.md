@@ -15,7 +15,7 @@ You may copy and redistribute the material in any medium or format. You may adap
 
 A suitable credit line is
 
-> Adapted from *A Primer on Matrix Notation* by Jibonayan Raychaudhuri (2026), licensed under CC BY 4.0. Changes: [describe changes, or write "none"].
+> Adapted from *A Primer on Matrix Notation* by Jibonayan Raychaudhuri (2026), licensed under CC BY 4.0. 
 
 Attribution must not suggest that the author endorses you or your use of the material. You may not add legal terms or technological measures that stop others from doing anything the licence permits.
 
@@ -37,5 +37,3 @@ The Hollerith photograph requires its own attribution. Anyone reusing it must cr
 ### Third-party material
 
 The summation rules in Section 3 follow the structure of James H. Steiger's notes on summation algebra, with new examples. Other sources are cited in the text and listed in the reference section of the document. Citation is not a licence. Quoted or closely paraphrased third-party material remains subject to its owners' rights.
-
-## Acknowledgements
