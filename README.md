@@ -6,6 +6,8 @@ A primer for economists on reading econometrics in both summation and matrix not
 - **Version** 26 October 2026
 - **Licence** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 
+**Read the primer** [2026-10-26_Matrix_Notation.pdf](2026-10-26_Matrix_Notation.pdf)
+
 ## Why this primer exists
 
 Econometrics is written in two languages. Greene's *Econometric Analysis* derives least squares in matrix algebra. Wooldridge's *Introductory Econometrics* derives most of the same results with sums and scalars. Journal articles switch between the two from one line to the next. A reader fluent in only one system reads half of the literature.
@@ -38,29 +40,26 @@ The final section checks the algebra numerically with NumPy. It computes **X′X
 
 NumPy's `einsum` evaluates the Einstein summation convention directly. The index string `"ij,ik->jk"` is the notation of Section 5, and in this case the notation runs as code.
 
-## Repository structure
+## Repository contents
 
 ```
 matrix-notation-for-economists/
-├── 2026-10-26_Matrix_Notation.pdf   
-├── figures/
-│   ├── gauss.jpg
-│   ├── cayley.jpg
-│   ├── einstein.jpg
-│   ├── hollerith.jpg
-│   ├── legendre.jpg
-│   ├── eniac.jpg
-│   └── CREDITS.txt                  sources and licences for every image
+├── 2026-10-26_Matrix_Notation.pdf   the primer, about 33 pages
+├── .github/ISSUE_TEMPLATE/
+│   └── correction.md                form for reporting errors and suggestions
 ├── LICENSE                          full text of CC BY 4.0
 └── README.md
 ```
 
+## Comments and corrections
+
+Corrections, questions and suggestions are welcome. Please [open an issue](https://github.com/jibonayan/matrix-notation-for-economists/issues/new/choose) and give the page and section number of the PDF. A GitHub account is required.
 
 ## How to cite
 
 Please cite the primer as
 
-> Raychaudhuri, J. (2026). *A Primer on Matrix Notation*. Teaching notes, version of 26 October 2026. GitHub repository `matrix-notation-for-economists`.
+> Raychaudhuri, J. (2026). *A Primer on Matrix Notation*. Teaching notes, version of 26 October 2026. <https://github.com/jibonayan/matrix-notation-for-economists>
 
 BibTeX:
 
@@ -70,7 +69,8 @@ BibTeX:
   title        = {A Primer on Matrix Notation},
   year         = {2026},
   note         = {Teaching notes, version of 26 October 2026},
-  howpublished = {GitHub repository \texttt{matrix-notation-for-economists}}
+  howpublished = {GitHub repository},
+  url          = {https://github.com/jibonayan/matrix-notation-for-economists}
 }
 ```
 
@@ -85,28 +85,28 @@ You may copy and redistribute the material in any medium or format. You may adap
 **Attribution is required.** Any copy or adaptation must
 
 1. credit the author as **Jibonayan Raychaudhuri**,
-2. give the title **A Primer on Matrix Notation** and link to this repository,
+2. give the title **A Primer on Matrix Notation** and link to this repository, <https://github.com/jibonayan/matrix-notation-for-economists>,
 3. link to the licence, <https://creativecommons.org/licenses/by/4.0/>, and
 4. state whether you made changes, and if so describe them briefly.
 
 A suitable credit line is
 
-> Adapted from *A Primer on Matrix Notation* by Jibonayan Raychaudhuri (2026), licensed under CC BY 4.0.
+> Adapted from *A Primer on Matrix Notation* by Jibonayan Raychaudhuri (2026), licensed under CC BY 4.0. Changes: [describe changes, or write "none"].
 
 Attribution must not suggest that the author endorses you or your use of the material. You may not add legal terms or technological measures that stop others from doing anything the licence permits.
 
 ### Images are licensed separately
 
-The six images in `figures/` are **not** covered by the CC BY 4.0 licence above. Each keeps its own terms, recorded in `figures/CREDITS.txt`. All were obtained from Wikimedia Commons and resized.
+The six images reproduced in the PDF are **not** covered by the CC BY 4.0 licence above. Each keeps its own terms, and each is credited beneath the image and on the Image Credits page of the PDF. All were obtained from Wikimedia Commons and resized.
 
-| File | Work | Licence |
+| Section | Work | Licence |
 |---|---|---|
-| `gauss.jpg` | Carl Friedrich Gauss, oil portrait by Christian Albrecht Jensen, 1840 | Public domain |
-| `cayley.jpg` | Arthur Cayley, photograph by Herbert Beraud, before 1883 | Public domain |
-| `einstein.jpg` | Albert Einstein, photograph by Ferdinand Schmutzer, 1921, restored by Adam Cuerden | Public domain |
-| `hollerith.jpg` | Replica of a Hollerith tabulator, Computer History Museum, photograph by Adam Schuster, 2007 | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
-| `legendre.jpg` | Adrien-Marie Legendre, watercolour caricature by Julien-Léopold Boilly, 1820 | Public domain |
-| `eniac.jpg` | Betty Jennings and Frances Bilas operating ENIAC, U.S. Army photograph, 1945 to 1947 | Public domain |
+| Sigma notation | Carl Friedrich Gauss, oil portrait by Christian Albrecht Jensen, 1840 | Public domain |
+| Matrix notation | Arthur Cayley, photograph by Herbert Beraud, before 1883 | Public domain |
+| Index notation | Albert Einstein, photograph by Ferdinand Schmutzer, 1921, restored by Adam Cuerden | Public domain |
+| Summing vectors | Replica of a Hollerith tabulator, Computer History Museum, photograph by Adam Schuster, 2007 | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
+| Matrix calculus | Adrien-Marie Legendre, watercolour caricature by Julien-Léopold Boilly, 1820 | Public domain |
+| Python section | Betty Jennings and Frances Bilas operating ENIAC, U.S. Army photograph, 1945 to 1947 | Public domain |
 
 The Hollerith photograph requires its own attribution. Anyone reusing it must credit Adam Schuster, link to the CC BY 2.0 licence and note that the image was resized.
 
