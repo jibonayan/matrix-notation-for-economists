@@ -42,7 +42,7 @@ NumPy's `einsum` evaluates the Einstein summation convention directly. The index
 
 ```
 matrix-notation-for-economists/
-├── 2026-10-26_Matrix_Notation.Rmd   R Markdown source of the primer
+├── 2026-10-26_Matrix_Notation.pdf   
 ├── figures/
 │   ├── gauss.jpg
 │   ├── cayley.jpg
@@ -55,28 +55,6 @@ matrix-notation-for-economists/
 └── README.md
 ```
 
-## Requirements
-
-The source knits to PDF through R Markdown and LaTeX. It needs
-
-- R with the packages `rmarkdown`, `knitr` and `reticulate`
-- a LaTeX distribution with `pdflatex`, such as TeX Live, MacTeX or TinyTeX
-- Python 3 with NumPy
-- the `figures/` folder in the same directory as the `.Rmd` file
-
-If `reticulate` or NumPy is missing, the document still knits. The Python code is shown but not run.
-
-## Building the PDF
-
-From R, with the working directory set to the repository,
-
-```r
-install.packages(c("rmarkdown", "knitr", "reticulate"))
-reticulate::py_install("numpy")   # skip if NumPy is already installed
-rmarkdown::render("2026-10-26_Matrix_Notation.Rmd")
-```
-
-In RStudio, open the `.Rmd` file and click **Knit**. The output is `2026-10-26_Matrix_Notation.pdf`, about 33 pages.
 
 ## How to cite
 
