@@ -91,7 +91,7 @@ You may copy and redistribute the material in any medium or format. You may adap
 
 A suitable credit line is
 
-> Adapted from *A Primer on Matrix Notation* by Jibonayan Raychaudhuri (2026), licensed under CC BY 4.0. Changes: [describe changes, or write "none"].
+> Adapted from *A Primer on Matrix Notation* by Jibonayan Raychaudhuri (2026), licensed under CC BY 4.0. 
 
 Attribution must not suggest that the author endorses you or your use of the material. You may not add legal terms or technological measures that stop others from doing anything the licence permits.
 
